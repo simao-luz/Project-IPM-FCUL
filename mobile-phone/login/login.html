@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width = device-width, initial-scale=1.0">
+  <title> Login menu </title>
+
+  <link rel="stylesheet" href="../common/phone-format.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="header">
+      <img src="../img/logo.png" alt="Logo">
+      <h2> tribe </h2>
+    </div>
+
+    <form>
+      <input type="text" id="username" placeholder="Username" required>
+
+      <div class="pw-container">
+        <input type="password" id="password" placeholder="Palavra-passe">
+        <img src="../img/eye-closed.png" class="toggle-pw" id="toggle-pw" alt="Mostrar palavra-passe">
+      </div>
+
+      <small id="error-msg" hidden> Preenche os dados corretamente! </small>
+
+      <button type="submit"> Iniciar Sessão </button>
+    </form>
+
+    <footer>
+      <p> By: André Marques & Simão da Luz </p>
+    </footer>
+
+    <script src="login.js"></script>
+  </div>
+</body>
+</html>

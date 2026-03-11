@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Os meus animais </title>
+
+  <link rel="stylesheet" href="../common/phone-format.css">
+  <link rel="stylesheet" href="../common/header-footer-base.css">
+  <link rel="stylesheet" href="animals.css">
+  <link rel="stylesheet" href="popups-animals.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="header">
+      <button class="back">
+        <img src="../img/back.png" alt="Voltar">
+      </button>
+
+      <h1> Animais </h1>
+    </div>
+
+    <div class="container">
+      <section class="panel">
+        <h1> Os meus animais </h1>
+        <button id="add-animal-btn"> + </button>
+      </section>
+
+      <div class="v-scroll" id="animals-scroll"> </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="../main-page/main-page.html">
+              <img src="../img/home.png" alt="Início">
+              Início
+            </a>
+          </li>
+
+          <li>
+            <a href="../events/events.html">
+              <img src="../img/bell.png" alt="Eventos">
+              Eventos
+            </a>
+          </li>
+
+          <li>
+            <a href="../account/account.html">
+              <img src="../img/account.png" alt="Conta">
+              Conta
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <div class="add-animal">
+    <div class="popup-header">
+      <h2> Adicionar Animal </h2>
+      <button class="close-btn"> X </button>
+    </div>
+
+    <form>
+      <label> Sexo: </label>
+      <div class="sex-options">
+        <label>
+          <input type="radio" name="sex" value="macho" required> Macho
+        </label>
+
+        <label>
+          <input type="radio" name="sex" value="femea" required> Fêmea
+        </label>
+      </div>
+
+      <label for="name"> Nome: </label>
+      <input type="text" id="name" name="name" maxlength="16" required>
+
+      <label for="species"> Espécie: </label>
+      <input type="text" name="species" id="species" maxlength="13" required>
+
+      <label for="chip"> Número de Chip: </label>
+      <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="15" id="id-num" required>
+
+      <div class="photo-options">
+        <label for="photo" class="custom-add-photo"> 📷 Foto </label>
+        <input type="file" id="photo" name="photo" accept="image/*" style="display: none;">
+      </div>
+
+      <button type="submit"> Adicionar </button>
+    </form>
+  </div>
+
+  <script src="../common/popup.js"></script>
+  <script src="animals.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Main menu </title>
+
+  <link rel="stylesheet" href="../common/phone-format.css">
+  <link rel="stylesheet" href="../common/header-footer-base.css">
+  <link rel="stylesheet" href="main-page.css">
+  <link rel="stylesheet" href="popups-main-page.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="header">
+      <button class="help">
+        <img src="../img/help.png" alt="Ajuda">
+      </button>
+
+      <h1> tribe </h1>
+    </div>
+
+    <div class="container">
+      <div class="background-circle">
+        <button class="item" id="emergency" data-i="0">
+          <img src="../img/emergency.png" alt="Emergência">
+          <span class="label"> Emergência </span>
+        </button>
+
+        <button class="item" id="dispensers" data-i="1">
+          <img src="../img/food.png" alt="Dispensadores">
+          <span class="label"> Casa </span>
+        </button>
+
+        <button class="item" id="locations" data-i="2">
+          <img src="../img/gps.png" alt="Localizações">
+          <span class="label"> Tracking </span>
+        </button>
+
+        <button class="item" id="my-animals" data-i="3">
+          <img src="../img/paw.png" alt="Animais">
+          <span class="label"> Animais </span>
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="active">
+              <img src="../img/home-active.png" alt="Início">
+              Início
+            </a>
+          </li>
+
+          <li>
+            <a href="../events/events.html">
+              <img src="../img/bell.png" alt="Eventos">
+              Eventos
+            </a>
+          </li>
+
+          <li>
+            <a href="../account/account.html">
+              <img src="../img/account.png" alt="Conta">
+              Conta
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <div class="emergency-popup">
+    <div class="popup-header">
+      <h2> Chamada de emergência para o veterinário ? </h2>
+    </div>
+
+    <div class="actions">
+      <button class="yes-btn"> Sim </button>
+      <button class="close-btn" id="no-btn"> Não </button>
+    </div>
+  </div>
+
+  <div class="help-popup">
+    <div class="popup-header">
+      <h2> Funcionalidades disponíveis: </h2>
+      <button class="close-btn" aria-label="Fechar">X</button>
+    </div>
+    <div class="popup-content">
+      <ol>
+        <li>Fazer chamada de emergência para um veterinário</li>
+        <li>Adicionar e remover um animal ao hub "Animais"</li>
+        <li>Editar o perfil de animais</li>
+        <li>Adicionar e remover um dispensador de comida/água</li>
+        <li>Verificar a localização de um animal em tempo real</li>
+        <li>Estabelecer uma "zona segura" para um animal, lançando um alerta quando este sai da zona</li>
+      </ol>
+    </div>
+  </div>
+
+  <script src="../common/popup.js"></script>
+  <script src="main-page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Animal Menu </title>
+
+  <link rel="stylesheet" href="../common/phone-format.css">
+  <link rel="stylesheet" href="../common/header-footer-base.css">
+  <link rel="stylesheet" href="animal-profile.css">
+  <link rel="stylesheet" href="animal-profile-popup.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="header">
+      <button class="back">
+        <img src="../img/back.png" alt="Voltar">
+      </button>
+
+      <h1> Perfil </h1>
+    </div>
+
+    <div class="animal-header">
+      <div class="img-container">
+        <img src="../img/billy.jpeg" alt="Foto de Billy">
+      </div>
+
+      <div class="animal-info">
+        <section class="animal-info-panel">
+          <h2> Billy </h2>
+          <button id="delete-button"> ❌ </button>
+        </section>
+
+        <div class="data">
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-animal-profile">
+
+      <div class="animal-details">
+
+        <div class="detail-row">
+          <p class="detail-label"> Idade: </p>
+          <p class="detail-editable" contenteditable="false"></p>
+          <div class="action-buttons">
+            <button class="edit-button"> ✏️ </button>
+            <button class="confirm-button" style="display:none;"> ✓ </button>
+            <button class="cancel-button" style="display:none;"> ✕ </button>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <p class="detail-label"> Peso: </p>
+          <p class="detail-editable" contenteditable="false"></p>
+          <div class="action-buttons">
+            <button class="edit-button"> ✏️ </button>
+            <button class="confirm-button" style="display:none;">✓</button>
+            <button class="cancel-button" style="display:none;">✕</button>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <p class="detail-label"> Nacionalidade: </p>
+          <p class="detail-editable" contenteditable="false"></p>
+          <div class="action-buttons">
+            <button class="edit-button">✏️</button>
+            <button class="confirm-button" style="display:none;">✓</button>
+            <button class="cancel-button" style="display:none;">✕</button>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <p class="detail-label"> Som favorito: </p>
+          <p class="detail-editable" contenteditable="false"></p>
+          <div class="action-buttons">
+            <button class="edit-button">✏️</button>
+            <button class="confirm-button" style="display:none;">✓</button>
+            <button class="cancel-button" style="display:none;">✕</button>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <p class="detail-label"> Atividade favorita: </p>
+          <p class="detail-editable" contenteditable="false"></p>
+          <div class="action-buttons">
+            <button class="edit-button">✏️</button>
+            <button class="confirm-button" style="display:none;">✓</button>
+            <button class="cancel-button" style="display:none;">✕</button>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <p class="detail-label"> Treinado: </p>
+          <p class="detail-editable" contenteditable="false"></p>
+          <div class="action-buttons">
+            <button class="edit-button">✏️</button>
+            <button class="confirm-button" style="display:none;">✓</button>
+            <button class="cancel-button" style="display:none;">✕</button>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <p class="detail-label"> Brinquedo preferido: </p>
+          <p class="detail-editable" contenteditable="false"></p>
+          <div class="action-buttons">
+            <button class="edit-button">✏️</button>
+            <button class="confirm-button" style="display:none;">✓</button>
+            <button class="cancel-button" style="display:none;">✕</button>
+          </div>
+        </div>
+
+        <div class="detail-row">
+          <p class="detail-label"> Vacinado: </p>
+          <p class="detail-editable" contenteditable="false"></p>
+          <div class="action-buttons">
+            <button class="edit-button">✏️</button>
+            <button class="confirm-button" style="display:none;">✓</button>
+            <button class="cancel-button" style="display:none;">✕</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="../main-page/main-page.html">
+              <img src="../img/home.png" alt="Início">
+              Início
+            </a>
+          </li>
+
+          <li>
+            <a href="../events/events.html">
+              <img src="../img/bell.png" alt="Eventos">
+              Eventos
+            </a>
+          </li>
+
+          <li>
+            <a href="../account/account.html">
+              <img src="../img/account.png" alt="Conta">
+              Conta
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+
+  <div class="delete-popup">
+    <div class="popup-header">
+      <h2> Deseja eliminar este perfil ? </h2>
+    </div>
+
+    <div class="actions">
+      <button class="yes-btn"> Sim </button>
+      <button class="close-btn" id="no-btn"> Não </button>
+    </div>
+  </div>
+
+  <script src="../common/popup.js"> </script>
+  <script src="animal-profile.js"> </script>
+  <script src="delete-popup.js"> </script>
+</body>
+
+</html>

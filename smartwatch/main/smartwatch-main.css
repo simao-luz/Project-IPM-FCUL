@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.watch-frame {
+  position: relative;
+  overflow: hidden;
+  width: 260px;
+  height: 300px;
+  border: 8px solid #000;
+  border-radius: 80px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  background: #acda7c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 17.5%;
+  background: #F4EDC8;
+  color: #4b3721;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+  padding: 6px 0;
+  border-top-left-radius: 96px;
+  border-top-right-radius: 96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  flex: 1;
+  margin-top: 15%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.option-button {
+  width: 80%;
+  padding: 10px 0;
+  background: #995D29;
+  color: #F4EDC8;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.option-button:hover {
+  background: #7a461b;
+}
+
+.popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;     /* relativa ao .watch-frame */
+  height: 100%;    /* relativa ao .watch-frame */
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.popup-box {
+  background: #F4EDC8;
+  border-radius: 8px;
+  padding: 12px;
+  width: 80%;
+  height: 50%;
+  text-align: center;
+  color: #4b3721;
+  font-family: 'Poppins', sans-serif;
+}
+
+.popup-box p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.popup-btn {
+  background: #995D29;
+  color: #F4EDC8;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup-btn:hover {
+  background: #7a461b;
+}

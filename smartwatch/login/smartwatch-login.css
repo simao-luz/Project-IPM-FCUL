@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.watch-frame {
+  width: 260px;
+  height: 300px;
+  border: 8px solid #000;
+  border-radius: 80px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  background: #acda7c;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.login-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 17.5%;
+  background: #F4EDC8;
+  color: #4b3721;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+  padding: 6px 0;
+  border-top-left-radius: 96px;
+  border-top-right-radius: 96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 80%;
+  margin-top: 30px;         /* afasta o form do topo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* remove o label “Digite o PIN” */
+.pin-label {
+  display: none;
+}
+
+/* form de PIN */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.pin-title {
+  font-weight: bold;
+  color: #4b3721;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+/* input de PIN maior */
+.pin-input {
+  width: 80%;
+  padding: 8px;
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background: #F4EDC8;
+  color: #4b3721;
+}
+
+.pin-input:focus {
+  outline: 2px solid #995D29;
+}
+
+.pin-button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background: #995D29;
+  color: #F4EDC8;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pin-button:hover {
+  background: #7a461b;
+}

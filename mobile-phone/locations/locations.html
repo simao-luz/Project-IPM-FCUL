@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Locations </title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="../common/phone-format.css">
+  <link rel="stylesheet" href="../common/header-footer-base.css">
+  <link rel="stylesheet" href="locations.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="header">
+      <button class="back">
+        <img src="../img/back.png" alt="Voltar">
+      </button>
+
+      <h1> Localizações </h1>
+    </div>
+
+    <div class="map">
+      <button id="portugal-btn">
+        <img src="../img/portugal-flag-small.png">
+      </button>
+
+      <button id="nepal-btn">
+        <img src="../img/nepal-flag-small.png">
+      </button>
+
+      <div id="confirm-zone" class="confirm-zone">
+        <p> Confirmar zona segura para <span id="animal-name"></span> ? </p>
+
+        <div class="btns-container">
+          <button id="confirm-zone-btn"> Confirmar </button>
+          <button id="cancel-zone-btn"> Cancelar </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="../main-page/main-page.html">
+              <img src="../img/home.png" alt="Início">
+              Início
+            </a>
+          </li>
+
+          <li>
+            <a href="../events/events.html">
+              <img src="../img/bell.png" alt="Eventos">
+              Eventos
+            </a>
+          </li>
+
+          <li>
+            <a href="../account/account.html">
+              <img src="../img/account.png" alt="Conta">
+              Conta
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <div id="alert-popup" style="display:none;">
+    <div class="alert-popup-content">
+      <h2>ALERTA</h2>
+      <p id="alert-message"></p>
+      <button id="alert-close-btn">Fechar</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="locations.js"></script>
+</body>
+</html>
+

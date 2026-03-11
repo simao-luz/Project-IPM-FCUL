@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dispensadores </title>
+
+  <link rel="stylesheet" href="../common/phone-format.css">
+  <link rel="stylesheet" href="../common/header-footer-base.css">
+  <link rel="stylesheet" href="dispensers.css">
+  <link rel="stylesheet" href="popups-dispensers.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="header">
+      <button class="back">
+        <img src="../img/back.png" alt="Voltar">
+      </button>
+
+      <h1> Casa </h1>
+    </div>
+
+    <div class="container">
+      <section class="panel">
+        <h1> Dispensadores </h1>
+        <button id="add-dispenser-btn"> + </button>
+      </section>
+
+      <div class="v-scroll" id="dispensers-scroll"> </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="../main-page/main-page.html">
+              <img src="../img/home.png" alt="Início">
+              Início
+            </a>
+          </li>
+
+          <li>
+            <a href="../events/events.html">
+              <img src="../img/bell.png" alt="Eventos">
+              Eventos
+            </a>
+          </li>
+
+          <li>
+            <a href="../account/account.html">
+              <img src="../img/account.png" alt="Conta">
+              Conta
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+  <!-- Pop-up para Hidratação -->
+  <div class="water-popup">
+    <div class="popup-header">
+      <h2> Hidratação </h2>
+      <p class="dispenser-name"></p>
+      <button class="close-btn"> X </button>
+    </div>
+
+    <div class="popup-body">
+      <button class="dispense-water-btn"> Dispensar Água </button>
+
+      <div class = "auto-refill">
+        <input type="checkbox" id="auto-refill">
+        <label for="auto-refill"> Ativar reposição automática </label>
+      </div>
+
+      <p class="water-level"> Nível atual de água: Baixo </p>
+    </div>
+  </div>
+
+  <!-- Pop-up para Alimentação -->
+  <div class="food-popup">
+    <div class="popup-header">
+      <h2> Alimentação </h2>
+
+      <p class="dispenser-name"></p>
+      <p class="current-quantity"></p>
+
+      <button class="close-btn"> X </button>
+    </div>
+
+    <div class="popup-body">
+
+      <div class="insta-feed">
+
+        <div class="input-container">
+          <input type="number" min="0" max="200" id="limited-input">
+          <span class="unit"> g </span>
+        </div>
+
+        <button class="dispense-food-btn"> Dispensar Agora </button>
+      </div>
+
+      <div class="auto-feed">
+        <h3> Configuração Automática </h3>
+
+        <div class="auto-feed-body">
+          <div class="starting-hour">
+            <label for="start-time"> Hora inicial: </label>
+            <input type="time" id="start-time">
+          </div>
+
+          <div class="interval-hours">
+            <label for="interval-hours"> Intervalo (horas): </label>
+            <select id="interval-hours">
+              <option value="2"> 2h </option>
+              <option value="4"> 4h </option>
+              <option value="6"> 6h </option>
+              <option value="8"> 8h </option>
+            </select>
+          </div>
+
+          <div class="quantity">
+            <label for="auto-feed-qnt"> Quantidade (g): </label>
+            <input type="number" id="auto-feed-qnt" min="10" step="10" value="50">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Pop-up para Criação de Dispensador -->
+  <div class="add-dispenser">
+
+    <div class="popup-header">
+      <h2> Adicionar Dispensador </h2>
+      <button class="close-btn"> X </button>
+    </div>
+
+    <div class="popup-body">
+      <form id="dispenser-form">
+
+        <div class="add-dispenser-name">
+          <label for="dispenser-name"> Nome do Local: </label>
+          <input type="text" name="dispenser-name" maxlength="15" required>
+        </div>
+
+        <div class="dispenser-type">
+          <label for="dispenser-type"> Tipo: </label>
+          <select name="dispenser-type" required>"
+            <option value="food"> Comida </option>
+            <option value="water"> Água </option>
+          </select>
+        </div>
+
+        <button type="submit" class="confirm-add-dispenser-btn"> Adicionar </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="delete-popup">
+    <div class="popup-header">
+      <h2> Deseja eliminar este dispensador ? </h2>
+    </div>
+
+    <div class="actions">
+      <button class="yes-btn"> Sim </button>
+      <button class="close-btn" id="no-btn"> Não </button>
+    </div>
+  </div>
+
+  <script src="../common/popup.js"></script>
+  <script src="dispensers.js"></script>
+</body>
+</html>

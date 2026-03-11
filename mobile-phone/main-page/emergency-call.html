@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Chamada de Emergência </title>
+
+  <link rel="stylesheet" href="../common/phone-format.css">
+  <link rel="stylesheet" href="main-page.css">
+  <link rel="stylesheet" href="popups-main-page.css">
+
+  <style>
+    .call-screen {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding-top: 150px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .call-screen .phone-icon {
+      font-size: 4rem;
+      margin-bottom: 16px;
+    }
+
+    .call-screen .call-text {
+      margin-bottom: 8px;
+
+      font-size: 1.2rem;
+      font-weight: bold;
+
+      color: #000000;
+    }
+
+    .call-screen .callee-name {
+      color: #000000;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .end-call-btn {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      bottom: 12%;
+      gap: 8px;
+
+      background-color: #995D29;
+      color: #F4EDC8;
+
+      border: none;
+      border-radius: 8px;
+
+      font-size: 1rem;
+
+      cursor: pointer;
+    }
+
+    .end-call-btn .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+
+      background-color: red;
+    }
+
+    .end-call-btn:hover {
+      background-color: #a32f29;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="call-screen">
+      <div class="phone-icon">📞</div>
+      <div class="call-text"> A chamar… </div>
+      <div class="callee-name"> Dr. José Veiga </div>
+      <button class="end-call-btn" id="end-call-btn">
+        <span class="dot"></span>
+        Desligar
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("end-call-btn")
+      .addEventListener("click", function () { window.location.href = "main-page.html";}, false);
+  </script>
+</body>
+</html>

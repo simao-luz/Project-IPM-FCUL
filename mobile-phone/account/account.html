@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Locations </title>
+
+  <link rel="stylesheet" href="../common/phone-format.css">
+  <link rel="stylesheet" href="../common/header-footer-base.css">
+  <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+  <div class="main-content">
+    <div class="header">
+      <button class="back">
+        <img src="../img/back.png" alt="Voltar">
+      </button>
+
+      <h1> Conta </h1>
+    </div>
+
+  <div class="account-container">
+    <div class="profile-card">
+      <img src="../img/profile-picture.png" alt="Foto de perfil" class="avatar">
+
+      <div class="profile-info">
+        <h2 id="username"> John Doe </h2>
+      </div>
+    </div>
+
+    <ul class="settings-list">
+      <li>
+        <span> Notificações push </span>
+        <label class="switch">
+          <input type="checkbox" id="push-toggle" checked>
+          <span class="slider"></span>
+        </label>
+      </li>
+      <li>
+        <span> Mudar palavra-passe </span>
+        <button class="mini-btn" disabled> Brevemente </button>
+      </li>
+    </ul>
+
+    <button id="logout-btn" class="logout-btn"> Terminar sessão </button>
+  </div>
+
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="../main-page/main-page.html">
+            <img src="../img/home.png" alt="Início">
+            Início
+          </a>
+        </li>
+
+        <li>
+          <a href="../events/events.html">
+            <img src="../img/bell.png" alt="Eventos">
+            Eventos
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="active">
+            <img src="../img/account-active.png" alt="Conta">
+            Conta
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </footer>
+</div>
+
+<script src="../common/popup.js"></script>
+<script src="account.js"></script>
+</body>
+</html>
+

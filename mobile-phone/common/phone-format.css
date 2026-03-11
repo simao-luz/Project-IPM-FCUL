@@ -1,0 +1,39 @@
+* {
+  user-select: none;
+}
+
+html {
+  height: 100%;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+}
+
+body {
+  position: relative; /* No caso da página ter pop-ups */
+}
+
+.main-content {
+  position: relative;
+  width: 300px;
+  height: 550px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 8px solid black;
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  background-color: #ACDA96;
+}

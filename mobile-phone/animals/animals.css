@@ -1,0 +1,179 @@
+.container {
+  width: 100%;
+  height: 77.5%;
+}
+
+.panel {
+  position: relative;
+  height: 12.5%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: #995D29;
+}
+
+.panel h1 {
+  padding-left: 7.5%;
+  margin: 0;
+
+  color: #F4EDC8;
+
+  font-size: 20px;
+  letter-spacing: 1px;
+
+  padding-left: 5%;
+}
+
+.panel button {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  right: 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  border: 1px solid black;
+  border-radius: 50%;
+
+  background-color: #4B3721;
+  color: #F4EDC8;
+
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.panel button:hover {
+  background: #2b3d23;
+}
+
+.v-scroll {
+  height: 87.5%;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.v-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  margin: 10px 10px 0 10px;
+  border-radius: 8px;
+  border: 2px solid black;
+  padding: 10px;
+
+  color: black;
+  background-color: #DEA858;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  cursor: pointer;
+}
+
+.card:hover {
+  transition: transform 0.6s ease, box-shadow 0.2s ease;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  border-radius: 8px;
+  width: 50%;
+  height: 100px;
+}
+
+.card-info {
+  color: #4D371B;
+  width: 46%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.card h3 {
+  max-width: 100%;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  text-align: left;
+
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.card p {
+  max-width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+
+  flex-wrap: nowrap;
+}
+
+/* ===========================
+   NOVAS REGRAS PARA DETALHES
+=========================== */
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #f4edc8; /* cor clara para contraste */
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.detail-label {
+  flex: 0 0 130px; /* largura fixa para alinhamento uniforme */
+  font-weight: 700;
+  white-space: nowrap; /* evita quebra no label */
+  color: #4d371b;
+}
+
+.detail-editable {
+  flex: 1; /* ocupa o espaço restante */
+  padding-left: 10px;
+  color: #4d371b;
+  outline: none;
+  min-height: 20px;
+  word-break: break-word; /* quebra texto longo se precisar */
+}
+
+.action-buttons {
+  margin-left: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.action-buttons button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 16px;
+  padding: 0;
+  line-height: 1;
+  color: #4d371b;
+}
+
+.action-buttons button:hover {
+  color: #995d29;
+}
+
+/* Opcional para container geral do perfil */
+.container-animal-profile {
+  padding: 10px 20px;
+}

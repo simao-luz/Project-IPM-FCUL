@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.watch-frame {
+  width: 260px;
+  height: 300px;
+  border: 8px solid #000;
+  border-radius: 80px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  background: #acda7c;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* cabeçalho */
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 17.5%;
+  background: #F4EDC8;
+  color: #4b3721;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+  padding: 6px 0;
+  border-top-left-radius: 96px;
+  border-top-right-radius: 96px;
+}
+
+/* container central */
+.call-container {
+  flex: 1;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 50px; /* ligeiro afastamento do header */
+}
+
+/* ícone do telefone */
+.call-icon {
+  font-size: 2.5rem;
+}
+
+/* texto “A Ligar…” */
+.call-text {
+  color: #4b3721;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* botão Desligar */
+.hangup-button {
+  padding: 8px 16px;
+  background: #995D29;
+  color: #F4EDC8;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hangup-button:hover {
+  background: #7a461b;
+}
