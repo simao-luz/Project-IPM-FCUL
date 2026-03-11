@@ -109,3 +109,4 @@ To run it, open:
 The interface of the application is in **Portuguese**, as the project was developed for a university course in Portugal.
 
 ## Authors
+- Simão da Luz - fc61816
