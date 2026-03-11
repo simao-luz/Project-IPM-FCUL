@@ -110,3 +110,4 @@ The interface of the application is in **Portuguese**, as the project was develo
 
 ## Authors
 - Simão da Luz - fc61816
+- André Marques - fc61782
